@@ -1,0 +1,757 @@
+@charset "utf-8";
+/* CSS Document */
+/*==========nav=============*/
+.nav {
+    width: 1200px;
+    margin: 0 auto;
+    height: 40px;
+    position: relative;
+    z-index: 10;
+}
+.nav b {
+    display: block;
+    width: 193px;
+    cursor: pointer;
+    border-bottom: 2px solid #dc0f50;
+    margin-right: 30px;
+    height: 40px;
+    overflow: hidden;
+    line-height: 40px;
+    float: left;
+    background: #333;
+    color: #fff;
+    padding: 0 20px;
+}
+.nav .pop {
+    width: 231px;
+    border: 1px solid #e5e5e5;
+    border-top: none;
+    overflow: hidden;
+    position: absolute;
+    height: 560px;
+    left: 0;
+    top: 40px;
+    margin-top: 2px;
+    background: #fff;
+    z-index: 10;
+}
+.nav .pop a {
+    display: block;
+    padding: 0 20px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 14px;
+    color: #333;
+}
+.nav ul {
+    overflow: hidden;
+    float: left;
+    width: 900px;
+    height: 40px;
+}
+.nav ul li a {
+    font-size: 18px;
+    color: #333;
+	text-decoration:none;
+}
+.head .top .search p a.curr, .head .top .search p a:hover, .nav ul li a:hover, .nav ul li a.curr {color: #dc0f50;}
+.nav ul li {
+    overflow: hidden;
+    padding: 0 16px 0 24px;
+    line-height: 40px;
+    height: 40px;
+    float: left;
+}
+.nav .pop a:hover, .nav .pop a.curr {
+    background: #dc0f50;
+    color: #fff;
+}
+.nav ul li a {
+    font-size: 18px;
+    color: #333;
+}
+
+/*===============main===============*/
+#main{
+	width:1200px;
+	min-height:3000px;
+	margin:0 auto;
+}
+#topThree{
+	width:714px;
+	height:561px;
+	margin-left:243px;
+}
+/*==============轮播================*/
+#topThree .carousel {
+	width: 714px;
+	height: 382px;
+	float:left;
+	background:#0FC;
+	position: relative;
+	margin-bottom:4px;
+}
+
+#topThree .carousel .pic {
+	width: 714px;
+	height: 382px;
+	overflow: hidden;
+}
+#topThree .carousel .pic .img0{
+	width:714px;
+	height:382px;
+}
+#topThree .carousel .pic ul li {
+	width: 714px;
+	height: 382px;
+	position: relative;
+}
+#topThree .carousel .dongdian {
+	width：:120px;
+	position: absolute;
+	left: 50%;
+	bottom: 10px;
+	margin-left:-60px;
+	z-index: 8;
+}
+#topThree .carousel .dongdian ul li{
+	width: 20px;
+	height: 20px;
+	border-radius:50%;
+	float: left;
+	margin-left: 5px;
+	background:#000;
+	color: #FFF;
+	text-align:center;
+	cursor:pointer;
+}
+#topThree .carousel .dongdian ul li.select{
+	background: #dc0f50;
+}
+#topThree .carousel .btn_prev,#topThree .carousel .btn_next{
+	width: 20px;
+	height: 60px;
+	background: #000;
+	cursor: pointer;
+	opacity: 0.5;
+	filter: alpha(opacity=50);
+	-moz-opacity: 0.5;
+	position: absolute;
+	top: 50%;
+	margin-top: -30px;
+	text-align: center;
+	color: #FFF;
+	line-height: 60px;
+	font-size: 19px}
+#topThree .carousel .btn_prev:hover,#topThree .carousel .btn_next:hover{
+	background: #000;
+	opacity: 0.9;
+	filter: alpha(opacity=90);
+	-moz-opacity: 0.9;
+}
+#topThree .carousel .btn_prev{
+	position: absolute;
+	left: 0;
+	padding-right: 10px;
+}
+#topThree .carousel .btn_next{
+	position:absolute;
+	right:0;
+	padding-left:10px;
+}
+
+/*======================轮播下面的小图=======================*/
+
+.ad1{width:355px;height:175px;float:left;margin-left:2px;}
+.ad1 img{width:355px;height:175px;border:none;}
+/*=================lunbo右边==========================*/
+#accountInfo{width:232px;height:561px;float:right;}
+.personal {
+    width: 232px;
+    height: 172px;
+    overflow: hidden;
+}
+.personal .no {
+	margin-bottom:10px;
+    border: 1px solid #e5e5e5;
+	margin-top:10px;
+}
+
+.personal .no .hd {
+    padding-top: 20px;
+    height: 78px;
+    text-align: center;
+}
+.personal .no img {
+    border-radius: 20px;
+	height: auto;
+    vertical-align: top;
+}
+.personal .no i {
+    display: block;
+    line-height: 24px;
+    font-size: 12px;
+    color: #333;
+}
+.personal .no a.dl {
+    display: block;
+    text-align: center;
+    width: 200px;
+    height: 40px;
+    line-height: 40px;
+    background: #dc0f50;
+    color: #fff;
+    font-size: 16px;
+    margin: 0 auto;
+}
+.personal .no p {
+    padding: 0 15px;
+    text-align: right;
+}
+.personal .no p a {
+    color: #333;
+    font-size: 12px;
+    line-height: 31px;
+}
+.personal .no p a:hover{color:#dc0f50;}
+/*=========conve==============*/
+.conve-list {
+    overflow: hidden;
+    height: 141px;
+    border: 1px solid #e5e5e5;
+    margin-bottom: 10px;
+}
+.conve-list .hd {
+    padding: 18px 0 18px 50px;
+    overflow: hidden;
+    height: 30px;
+    line-height: 30px;
+    font-size: 24px;
+    color: #666;
+    font-weight: bold;
+    background: url(img/mobile.png) no-repeat 10px center;
+}
+.conve-list ul {
+    padding: 0 10px;
+    overflow: hidden;
+}
+.conve-list ul li {
+    width: 25%;
+    float: left;
+    overflow:hidden;
+}
+.conve-list ul li a {
+    display: block;
+    line-height: 15px;
+    color: #333;
+    text-align: center;
+    font-size: 12px;
+}
+.conve-list ul li a i {
+    display: block;
+    width: 26px;
+    height: 20px;
+    background: url(img/icon_2.png) no-repeat;
+    margin: 2px auto;
+    margin-bottom: 5px;
+}
+.conve-list ul li a i.i2 {
+    background-position: 0 -20px;
+}
+.conve-list ul li a i.i3 {
+    background-position: 0 -40px;
+}
+.conve-list ul li a i.i4 {
+    background-position: 0 -60px;
+}
+/*==========hover改变背景图==============*/
+.conve-list ul li a:hover i.i1 {
+    background-position: right 0;
+}
+.conve-list ul li a:hover i.i2 {
+    background-position: right -20px;
+}
+.conve-list ul li a:hover i.i3 {
+    background-position: right -40px;
+}
+.conve-list ul li a:hover i.i4 {
+    background-position: right -60px;
+}
+
+
+/*=============miaosha==================*/
+.goods-hd ul {
+    border: 1px solid #e5e5e5;
+    border-top: none;
+    height: 153px;
+    overflow: hidden;
+    padding: 22px 0 0 4px;
+}
+.goods-hd ul li {
+    width: 110px;
+    overflow: hidden;
+    float: left;
+    margin-right: 3px;
+}
+.goods-hd ul li a img {
+    width: 98px;
+    height: 98px;
+    display: block;
+    margin: 0 auto;
+}
+
+.goods-hd ul li a i {
+    display: block;
+    margin-top: 10px;
+    background: #dc0f50;
+    height: 28px;
+    line-height: 28px;
+    text-align: center;
+    font-size: 12px;
+    font-size: 12px;
+    color: #fff;
+}
+.goods-hd h2 {
+    height: 40px;
+    line-height: 40px;
+    overflow: hidden;
+    background: #dc0f50;
+    padding: 0 12px;
+    color: #fff;
+    font-size: 16px;
+}
+/*==================通知======================*/
+.inform{
+	width:1200px;
+	height:110px;
+	background:#0FC;
+	float:left;
+	margin:40px 0 40px 0;
+	text-align:center;
+}
+.inform img{height:110px;}
+/*=================live_list===========================*/
+/*=========列表重置样式=============*/
+.live-list .hd, .selling .hd, .hot .hd, .box .hd, .order .hd, .wx-pay .hd {
+    height: 32px;
+    background: url(img/hd_bg.jpg) repeat-x left bottom;
+    overflow: hidden;
+    margin-bottom: 30px;
+}
+.live-list .hd h2, .selling .hd h2, .hot .hd h2, .box .hd h2, .order .hd h2, .wx-pay .hd h2 {
+    float: left;
+    padding-right: 8px;
+    font-size: 24px;
+    color: #333;
+    background: #fff;
+    line-height: 24px;
+    padding-top: 4px;
+}
+.live-list .bd, .current .bd {
+    overflow: hidden;
+    height: 300px;
+    position: relative;
+	width:1200px;
+}
+.live-list .bd .prev:hover {
+    filter: alpha(opacity=100);
+    -moz-opacity: 1;
+    opacity: 1;
+}
+.live-list .bd .next:hover {
+    filter: alpha(opacity=100);
+    -moz-opacity: 1;
+    opacity: 1;
+}
+.live-list .bd ul li a, .current .bd a {
+    position: relative;
+    display: block;
+    width: 200px;
+    overflow: hidden;
+}
+/*===============list--ul----li======================*/
+.live-list .bd ul, .current .bd ul {
+    overflow: hidden;
+    padding: 0 25px;
+    height: 298px;
+    width: 100000%;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+}
+.live-list .bd ul li, .current .bd li {
+    width: 200px;
+    margin: 0px 22px 0 11px;
+    overflow: hidden;
+    float: left;
+}
+.live-list .bd ul li a span.s1, .current .bd a span.s1 {
+    background: #008120;
+}
+.live-list .bd, .current .bd {
+    overflow: hidden;
+    height: 300px;
+    position: relative;
+}
+.live-list .bd ul li a img, .current .bd a img {
+    width: 200px;
+    height: 200px;
+    display: block;
+    overflow: hidden;
+}
+.live-list{float:left;}
+
+.bd a span {
+    display: block;
+    height: 24px;
+    margin-top: -24px;
+    text-align: center;
+    font-size: 14px;
+    color: #fff;
+    line-height: 24px;
+    background: #333;
+    position: relative;
+    filter: alpha(opacity=70);
+    -moz-opacity: 0.7;
+    opacity: 0.7;
+}
+.live-list .bd ul li a span.s1, .current .bd a span.s1 {
+    background: #008120;
+}
+.live-list .bd ul li a b, .current .bd a b {
+    display: block;
+    padding: 5px 0;
+    line-height: 21px;
+    height: 40px;
+    overflow: hidden;
+    font-size: 14px;
+    color: #333;
+}
+.live-list .bd ul li a font, .current .bd a font {
+    display: block;
+    line-height: 24px;
+    color: #dc0f50;
+    font-size: 20px;
+}
+.live-list .bd ul li a font i, .current .bd a font i {
+    padding: 0 8px;
+    font-size: 12px;
+    color: #999;
+    text-decoration: line-through;
+}
+/*=======================左右切换==================*/
+.live-list .bd .prev, .live-list .bd .next {
+    width: 30px;
+    height: 60px;
+    position: absolute;
+    top: 50%;
+    margin-top: -30px;
+    opacity: 0.5;
+    filter: alpha(opacity=50);
+    -moz-opacity: 0.5;
+}
+.live-list .bd .prev, .live-list .bd .next {
+    margin-top: -80px;
+}
+.live-list .bd .prev {
+    background: url(img/prev_bg.png) no-repeat;
+    left: 0;
+}
+.live-list .bd .next {
+    background: url(img/next_bg.png) no-repeat;
+    right: 0;
+}
+
+/*==================list2--panic-list======================*/
+.panic-list .hd h2 font, .box .hd h2 font {
+    font-size: 16px;
+    color: #333;
+    margin-left: 20px;
+    padding: 12px 0 0 0;
+    line-height: 20px;
+}
+.panic-list .bd ul li a span, .current .bd li a span {
+    width: 60px;
+    height: 26px;
+    line-height: 26px;
+    color: #fff;
+    font-size: 16px;
+    text-align: center;
+    background: #dc6c8f;
+    position: absolute;
+    right: 0;
+    top: 174px;
+    filter: alpha(opacity=100);
+    -moz-opacity: 1;
+    opacity: 1;
+    margin: 0;
+}
+.panic-list .bd ul li a strong, .current .bd li a strong {
+    width: 51px;
+    height: 51px;
+    padding: 4px;
+    background: #ea2e2f;
+    overflow: hidden;
+    position: absolute;
+    right: 0;
+    top: 210px;
+    font-size: 20px;
+    color: #fff;
+    line-height: 25px;
+    text-align: center;
+    font-weight: normal;
+}
+.panic-list .bd ul li a b, .panic-list .bd ul li a font, .current .bd li a b, .current .bd li a font {
+    padding-right: 62px;
+}
+
+/*=================1F========================*/
+/*==========1F左================*/
+.floor {
+    overflow: hidden;
+    margin-bottom: 40px;
+	width:1200px;
+}
+.floor .fl {
+    width: 890px;
+    overflow: hidden;
+    float: left;
+    height: 556px;
+	background:#FC9
+}
+.floor .hd {
+    margin-bottom: 20px;
+}
+.floor .fl .bd .left p a img, .floor .fl .bd .left b a img {
+    width: 100%;
+}
+.floor .fl .bd {
+    overflow: hidden;
+}
+.floor .fl .bd .left {
+    width: 300px;
+    float: left;
+}
+.floor .fl .bd .left b {
+    display: block;
+    height: 376px;
+    margin-bottom: 30px;
+    overflow: hidden;
+}
+.floor .fl .bd .left p {
+    padding: 0 6px;
+    height: 108px;
+    overflow: hidden;
+}
+.floor .fl .bd .left p a {
+    display: block;
+    width: 80px;
+    border: 1px solid #e5e5e5;
+    height: 28px;
+    overflow: hidden;
+    float: left;
+    margin: 0 6px 15px 8px;
+}
+.floor .fl .bd .right {
+    width: 580px;
+    float: right;
+    overflow: hidden;
+}
+.floor .fl .bd .right .focus, .floor .fl .bd .right .focus .hd, .floor .fl .bd .right .focus .hd li {
+    width: 580px;
+    height: 310px;
+}
+/*=============1F右--轮播====================*/
+.focus {
+    margin-bottom: 4px;
+    width: 714px;
+    height: 382px;
+    overflow: hidden;
+    position: relative;
+}
+.focus .hd li img {
+    width: 100%;
+    height: 100%;
+}
+.focus .prev, .focus .next {
+    width: 30px;
+    height: 60px;
+    position: absolute;
+    top: 50%;
+    margin-top: -30px;
+    opacity: 0.5;
+    filter: alpha(opacity=50);
+}
+.focus .prev {
+    background: url(img/prev_bg.png) no-repeat;
+    left: 0;
+}
+.focus .next {
+    background: url(img/next_bg.png) no-repeat;
+    right: 0;
+}
+.focus .num {
+    width: 100%;
+    text-align: center;
+    height: 16px;
+    position: absolute;
+    bottom: 11px;
+    left: 0;
+}
+.focus .num li {
+    text-align: center;
+    height: 16px;
+    line-height: 16px;
+    display: inline-block;
+    width: 16px;
+    margin: 0 5px;
+    background: #333;
+    color: #fff;
+    font-size: 12px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+.focus .num li.on {
+    background: #dc0f50;
+}
+/*=============1F中下=====================*/
+.floor .fl .bd .right .ad3 {
+    width: 190px;
+    height: 190px;
+    float: left;
+    overflow: hidden;
+    margin-right: 5px;
+}
+.floor .fl .bd .right .ad3 img, .floor .fl .bd .right .ad4 img {
+    width: 190px;
+    height: 190px;
+}
+.floor .fl .bd .right .ad4 {
+    float: right;
+    width: 190px;
+    height: 190px;
+    overflow: hidden;
+}
+/*===============1F右边=====本月热销===================*/
+.floor .fr {
+    float: right;
+    width: 300px;
+    overflow: hidden;
+    height: 556px;
+}
+.selling .hd h2 {
+    font-size: 20px;
+    padding-left: 8px;
+}
+.selling .bd li {
+    height: 80px;
+    padding: 10px 0;
+    border-bottom: 1px solid #e5e5e5;
+    margin-top: -1px;
+    overflow: hidden;
+    position: relative;
+    padding-left: 97px;
+}
+.selling .bd li a {
+    display: block;
+    height: 80px;
+	cursor:pointer;
+}
+.selling .bd li a i {
+    display: block;
+    width: 25px;
+    height: 25px;
+    line-height: 18px;
+    padding-left: 5px;
+    font-size: 12px;
+    color: #fff;
+    position: absolute;
+    left: 0;
+    top: 10px;
+    z-index: 10;
+}
+.selling .bd li a i.i1 {
+    background: url(img/biao_bg.png) no-repeat;
+}
+.selling .bd li a img {
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    left: 0;
+    top: 10px;
+}
+.selling .bd li a b {
+    display: block;
+    height: 32px;
+    line-height: 16px;
+    overflow: hidden;
+    font-size: 14px;
+    color: #333;
+    margin-bottom: 22px;
+}
+.selling .bd li a em {
+    font-size: 20px;
+    color: #dc0f50;
+    line-height: 26px;
+}
+.selling .bd li a i.i2 {
+    background: url(img/biao_bg.png) no-repeat 0 -26px;
+}
+.selling .bd li a i.i3 {
+    background: url(img/biao_bg.png) no-repeat 0 -52px;
+}
+/*==================floor楼层end===========================*/
+/*=================楼层vav========================*/
+#lou_nav {
+	width: 32px;
+	position: fixed;
+	top: 150px;
+	left: 30px;
+	border: 1px solid #ddd;
+	display: none;
+}
+#lou_nav ul li {
+	width: 32px;
+	height: 32px;
+	border-bottom: 1px dotted #DDDDDD;
+	list-style: none;
+	font-size: 12px;
+	color: #666;
+	text-align: center;
+	line-height: 32px;
+	position: relative;
+	cursor: pointer;
+}
+#lou_nav ul li span {
+	width: 32px;
+	height: 32px;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+#lou_nav ul li span {
+	display: none;
+}
+#lou_nav ul li.last {
+	background: #dc0f50;
+	color: #fff;
+	border-bottom: 1px solid #ddd;
+}
+#lou_nav ul li.hover span {
+	background: #dc0f50;
+	color: #fff;
+	display: block;
+}
+#lou_nav ul li.hover span.active {
+	background: #dc0f50;
+	color: #fff;
+	display: block;
+}
+#lou_nav ul li span.active {
+	background: #fff;
+	color: #dc0f50;
+	display: block;
+}
+
+
+

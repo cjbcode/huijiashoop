@@ -1,0 +1,428 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>details</title>
+<link rel="stylesheet" href="../css/common.css"/>
+<link rel="stylesheet" href="../css/details.css"/>
+<script type="text/javascript" src="../js/jquery-1.12.0.js"></script>
+<script src="../js/common.js"></script>
+</head>
+
+<body>
+<!--==================头部wrap_top===================-->
+<div class="wrap_top">
+    <p>
+        <a class="fl">收藏</a>
+        <a href="../index.html" class="shou">首页</a>
+        <a id="topLogin" href="login.html">请登录</a>
+        <a class="on" id="topLoginName" style="display:none;"></a>
+        <a id="topLoginOut" style="display:none;">退出</a>
+        <a id="topRegister" href="register.html">免费注册</a>
+        <span>|</span>
+        <font id="fontShoppingCart">购物车<a id="shoppingCartNum">0</a>件</font>
+        <a id="myJYH">我的家有</a>
+        <font id="fontDiscount">可用优惠劵<a id="discountNum">0</a>张</font>
+        <a id="myFavourites">我的收藏</a><span>|</span>
+        <label class="iphone">
+        	<a>手机版
+            <strong class="tan">
+                <i></i>
+                <img src="../img/ewm02.jpg"/>
+                <em>惠家有APP</em>
+            </strong>
+            </a>
+        </label>
+        <label class="wx">
+            <a>微信版
+                <strong class="tan">
+                    <i></i>
+                    <img src="../img/ewm01.jpg"/>
+                    <em>惠家有微信</em>
+                </strong>
+            </a>
+        </label>
+    </p>
+</div> 
+<!--========================head============================= -->
+<div class="head">
+	<div class="top">
+        <h1><a href="#"><img src="../img/logo.jpg" alt="惠家有" title="惠家有"></a></h1>
+        <div class="search">
+            <input type="text" id="txtSearch" value="">
+            <a id="btnSearch" class="s1">搜 索</a>
+            <p id="hotWord">
+                <a class="curr">洗衣液</a>
+                <a class="">螺丝刀</a> 
+                <a class="">斧头牌</a> 
+                <a class="">韩束</a> 
+                <a class="">无痕内衣</a> 
+                <a class="">薰衣草</a> 
+                <a class="">双立人</a> 
+                <a class="">申鸿</a> 
+                <a class="">海参</a> 
+            </p>
+            <!--====搜索关联====-->
+            <div class="relevance" id="divAssociate" style="display:none;">
+            </div>
+        </div>
+		<div class="fr" id="gou">
+            <a class="gou">我的购物车<i id="i_totalnum_top">0</i></a>
+            <em id="biao" style="display: none;"></em>
+			<div class="ware_list" id="ware_list" style="display: none;">
+	<!--========================有商品===========================-->
+                <div class="you" id="cart_yes" style="display: none;">
+                    <h2>最新加入商品</h2>
+                    <ul class="bd description2" id="wrasList"></ul>
+                    <div class="ft">
+                        <span><a style="cursor:pointer" id="btnCart">去购物车</a></span>
+                        <font>共<i id="i_totalnum">0</i>件商品</font>
+                        <font>合计<b id="i_totalprice">￥0.00</b>元</font>
+                    </div>
+                </div>
+	<!--========================没有商品=========================-->
+                <div class="wu" style="" id="cart_no">
+                    购物车中还没有商品，赶紧去选购吧
+                </div>
+			</div>
+		</div>
+	</div>
+</div>
+<!--=========================内容================================== -->
+<div class="main" id="mainContent">
+<div class="details">
+    <h2>
+        <a id="btnAllProduct" style="cursor:pointer">全部商品</a>
+        <span id="span_Category"></span>
+    </h2>
+    <div class="show">
+        <div class="fl">
+            <div class="small">
+       <!--====class="up curr"为不可点击状态，如没有curr是正常可点击状态====-->
+                <a class="up curr"></a>
+                <div style="position:relative;height:444px;overflow:hidden;">
+                    <ul id="ulSlider" style="position:absolute;">
+                        <li><img src="../img/fsmall_a1.jpg"/></li>
+                        <li><img src="../img/fsmall_a2.jpg"/></li>
+                        <li><img src="../img/fsmall_a3.jpg"/></li>
+                    </ul>
+                </div>
+       <!--====class="down curr"为不可点击状态，如没有curr是正常可点击状态====-->
+                <a class="down curr"></a>
+            </div>
+            
+            <div class="big">
+                <img src= "../img/fbig_a1.jpg" id="mainImg" class="smp">
+                <div class="smallpic"></div>
+            </div>
+            
+            <div class="bigpic">
+            	<img class="bp" src="../img/fbig_a1.jpg">
+            </div>
+       <!--====================放大镜========================== -->
+
+       <!--============================================= -->
+        </div>
+        <div class="fr">
+            <h3 id="productName">欧润哲大M微波炉架子黑色</h3>
+            <div class="bd">
+                <p class="price">
+                    <b>¥105.00</b>
+                    <em>¥309.00</em>
+                </p>
+                <p class="num">
+                    <b>商品编号</b>
+                    <span>1111111111</span>
+                </p>
+                <p class="shou">
+                    <b>月销</b>
+                    <span>111件</span>
+                </p>
+        
+                <p style="display: none;" class="gift" id="promotion">
+                    <b>促销</b>
+                    <span></span>
+                </p>
+                <div style="display: none;" class="duo" id="more">更多</div>
+                <!---class="dui"是正常情况下-->
+                <div class="dui" id="div_productinfo">
+                    <div class="tips" id="divProductProperty"></div>
+                    <div style="display: none;" id="divPropertyList">
+                        <p class="option" index="0">
+                            <b>颜色</b>
+                            <font>
+                                <a class="">黑色</a>
+                            </font>
+                        </p>
+                        <p class="option" index="1">
+                            <b>款式</b>
+                            <font>
+                                <a class="">大M架子</a>
+                            </font>
+                        </p>
+                    </div>
+                    <p class="number">
+                        <b>购买数量</b>
+                        <label>
+                        <a class="jian">-</a>
+                        <input id="buycount" value="1" type="text">
+                        <a class="jia">+</a>
+                        </label><span>限购<i>90</i>件</span>
+                    </p>
+                </div>
+                <p class="list" id="pAuthorityLogo">
+                <span class="s1" style="background: url(../css/img/zheng.png) no-repeat left top;background-size: 20px auto;">正品保障</span>
+                <span class="s1" style="background: url(../css/img/you.png) no-repeat left top;background-size: 20px auto;">全场包邮</span>
+                <span class="s1" style="background: url(../css/img/7tian.png) no-repeat left top;background-size: 20px auto;">7天包退换（生鲜除外）</span>
+                </p>
+                <div class="btn">
+                    <a id="btnBuy" class="a1" style="cursor: pointer;">立即购买</a>
+                    <a id="btnAddShoppingCart" class="a2" style="cursor: pointer;">加入购物车</a>
+                    <a id="mainseckillbuy" class="star" style="cursor:pointer;display:none; width:260px">立即购买</a>
+                    <span id="sc">收藏</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="content">
+        <ul class="hd" id="nav">
+            <li class="curr">商品详情</li>
+            <li>规格参数</li>
+            <li style="display: none;" id="commonProblem">常见问题</li>
+        </ul>
+        <div class="bd" id="u_cont">
+            <div class="img" id="topNinePropertyInfo">
+                <span class="tu" id="productImgContent">
+                    <img src="../img/xiang_a1.jpg" style="width:100%">
+                    <img src="../img/xiang_a2.jpg" style="width:100%">
+                    <img src="../img/xiang_a3.jpg" style="width:100%">
+                    <img src="../img/xiang_a4.jpg" style="width:100%">
+                    <img src="../img/xiang_a5.jpg" style="width:100%">
+                    <img src="../img/xiang_a6.jpg" style="width:100%">
+                    <img src="../img/xiang_a7.jpg" style="width:100%">
+                    <img src="../img/xiang_a8.jpg" style="width:100%">
+                    <img src="../img/xiang_a9.jpg" style="width:100%">
+                    <img src="../img/xiang_a10.jpg" style="width:100%">
+                    <img src="../img/xiang_a11.jpg" style="width:100%">
+                    <img src="../img/xiang_a12.jpg" style="width:100%">
+                    <img src="../img/xiang_a13.jpg" style="width:100%">
+                </span>
+            </div>
+            <div class="table" id="ulProductPropertyInfo">
+                <ul>
+                    <li>
+                        <b>【商品编码】</b>
+                        <span>111111111</span>
+                    </li><li>
+                        <b>【品牌】</b>
+                        <span>欧润哲</span>
+                    </li>
+                    <li>
+                        <b>【商品名称】</b>
+                        <span>欧润哲大M微波炉架子黑色</span>
+                    </li>
+                    <li>
+                        <b>【组成】</b>
+                        <span>微波炉架子1个</span>
+                    </li>
+                    <li>
+                        <b>【尺寸】</b>
+                        <span>55.5*37*35</span>
+                    </li>
+                    <li>
+                        <b>【颜色】</b>
+                        <span>黑色</span>
+                    </li>
+                    <li>
+                        <b>【材质】</b>
+                        <span>铁喷漆</span>
+                    </li>
+                </ul>
+            </div>
+            
+        </div>
+    </div>
+</div>
+
+<!--============返回顶部============-->
+<ul class="drift">
+    <li class="l1">
+        <a href="#">
+            <strong class="tan2">
+                <i></i>
+                <span></span>
+                <img src="../img/ewm02.jpg">
+                <em>惠家有APP</em>
+            </strong>
+        </a>
+    </li>
+    <li class="l2">
+        <a href="#">
+            <strong class="tan2">
+                <i></i>
+                <span></span>
+                <img src="../img/ewm01.jpg">
+                <em>惠家有微信</em>
+            </strong>
+        </a>
+    </li>
+    <li style="display: list-item;" class="l3" id="back-to-top">
+        <a href="#">返回顶部</a>
+    </li>
+</ul>
+
+
+<!--=============底部============== -->
+<ul class="warrant" id="ul_warrant">
+	<li class="l1">
+		<b>100%正品保证</b>
+		<i>质量有保障</i>
+	</li>
+	<li class="l2">
+		<b>在线支付 全场包邮</b>
+		<i>送货上门</i>
+	</li>
+		<li class="l3">
+		<b>支持银联刷卡付款</b>
+	<i>付款更安全</i>
+	</li>
+    <li class="l4">
+		<b>货到付款 开箱验货</b>
+		<i>满意才收货</i>
+	</li>
+	<li class="l5">
+		<b>7x24小时人工服务</b>
+		<i>微笑无时无刻 4008-678-210</i>
+	</li>
+</ul>
+
+<!--=================foot======================= -->
+<div class="foot">
+	<div class="cont">
+		<div class="fl" id="div_title_index">
+			<dl>
+				<dt>
+				<a>关于我们</a>
+				</dt>
+				<dd>
+					<a>公司介绍</a>
+				</dd>
+				<dd>
+					<a>招聘信息</a>
+				</dd>
+				<dd>
+					<a>联系我们</a>
+				</dd>
+				<dd>
+					<a>用户隐私条款</a>
+				</dd>
+			</dl>
+
+			<dl>
+				<dt>
+					<a>订购指南</a>
+				</dt>
+				<dd>
+					<a>交易条款</a>
+				</dd>
+				<dd>
+					<a>注册/购物流程</a>
+				</dd>
+				<dd>
+					<a>退/换货</a>
+				</dd>
+				<dd>
+					<a>积分说明</a>
+				</dd>
+				<dd>
+					<a>发票指南</a>
+				</dd>
+				<dd>
+					<a>会员制度说明</a>
+				</dd>
+			</dl>
+            
+			<dl>
+				<dt>
+					<a>配送服务</a>
+				</dt>
+				<dd>
+					<a>配送区域</a>
+				</dd>
+				<dd>
+					<a>配送时间</a>
+				</dd>
+				<dd>
+					<a>验货与签收</a>
+				</dd>
+			</dl>
+            
+			<dl>
+				<dt>
+					<a>支付方式</a>
+				</dt>
+				<dd>
+					<a>网上支付</a>
+				</dd>
+				<dd>
+					<a>货到付款</a>
+				</dd>
+			</dl>
+
+			<dl>
+				<dt>
+					<a>合作专区</a>
+				</dt>
+				<dd>
+					<a>成为供应商</a>
+				</dd>
+				<dd>
+					<a>供应商系统</a>
+				</dd>
+				<dd>
+					<a>合作伙伴</a>
+				</dd>
+			</dl>
+		</div>
+        <div class="fr">
+            <ul class="hd">
+                <li><img src="../img/ewm01.jpg" alt="惠家有微信">惠家有微信</li>
+                <li><img src="../img/ewm02.jpg" alt="惠家有APP">惠家有APP</li>
+            </ul>
+            <p>
+                <b>4008-678-210</b>
+                <i>客服 7x24小时 (全年无休)</i>
+            </p>
+        </div>
+    </div>
+</div>
+<!--===================footer============================ -->   
+<div class="footer">
+    <div class="cont">
+         <p>
+            <a>关于家有</a>
+            <span>|</span>
+            <a>媒体关注</a>
+            <span>|</span>
+            <a>联系我们</a>
+            <span>|</span>
+            <a>诚聘英才</a>
+            <span>|</span>
+            <a>校园招聘</a>
+            <span>|</span>
+            <a>全部品牌</a>
+            <span>|</span>
+            <a>投诉建议</a>
+        </p>
+        <p id="friendLinkList">友情链接： 
+            <a>南京手机报价</a> <a>竞拍</a> 
+            <a>奥莱购</a> 
+            <a>商品百科</a>
+        </p>
+        <p>Copyright © 2008-2013 huijiayou.cn <a>家有购物集团有限公司北京分公司</a> 版权所有 黔ICP备13002365号  增值电信业务经营许可证：黔B2-20120036</p>
+    </div>
+</div>
+<script src="../js/details.js"></script>
+
+</body>
+</html>

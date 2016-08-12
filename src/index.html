@@ -1,0 +1,1232 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>惠家有-首页</title>
+<link rel="stylesheet" href="css/index.css"/>
+<link rel="stylesheet" href="css/common.css"/>
+</head>
+
+<body>
+<!--==================头部wrap_top===================-->
+<div class="wrap_top">
+    <p>
+        <a class="fl">收藏</a>
+        <a href="#" class="shou" href="file:///G:/huijiawork/src/index.html">首页</a>
+        <a id="topLogin" href="file:///G:/huijiawork/src/html/login/login.html">请登录</a>
+        <a class="on" id="topLoginName" style="display:none;"></a>
+        <a id="topLoginOut" style="display:none;">退出</a>
+        <a id="topRegister" href="file:///G:/huijiawork/src/html/register/register.html">免费注册</a>
+        <span>|</span>
+        <font id="fontShoppingCart">购物车<a id="shoppingCartNum">0</a>件</font>
+        <a id="myJYH">我的家有</a>
+        <font id="fontDiscount">可用优惠劵<a id="discountNum">0</a>张</font>
+        <a id="myFavourites">我的收藏</a><span>|</span>
+        <label class="iphone">
+        	<a>手机版
+            <strong class="tan">
+                <i></i>
+                <img src="img/ewm02.jpg"/>
+                <em>惠家有APP</em>
+            </strong>
+            </a>
+        </label>
+        <label class="wx">
+            <a>微信版
+                <strong class="tan">
+                    <i></i>
+                    <img src="img/ewm01.jpg"/>
+                    <em>惠家有微信</em>
+                </strong>
+            </a>
+        </label>
+    </p>
+</div> 
+<!--========================head============================= -->
+<div class="head">
+	<div class="top">
+        <h1><a href="#"><img src="img/logo.jpg"></a></h1>
+        <div class="search">
+            <input type="text" id="txtSearch" value="">
+            <a id="btnSearch" class="s1">搜索</a>
+            <p id="hotWord">
+                <a href="html/list/list.html" class="curr">洗衣液</a>
+                <a href="html/list/list.html" class="">螺丝刀</a> 
+                <a href="html/list/list.html" class="">斧头牌</a> 
+               <a href="html/list/list.html" class="">韩束</a>
+                <a href="html/list/list.html" class="">无痕内衣</a> 
+                <a href="html/list/list.html" class="">薰衣草</a> 
+                <a href="html/list/list.html" class="">双立人</a> 
+                <a href="html/list/list.html" class="">申鸿</a> 
+                <a href="html/list/list.html" class="">海参</a> 
+            </p>
+            <div class="relevance" id="divAssociate" style="display:none;">
+            </div>
+        </div>
+		<div class="fr" id="gou">
+            <a class="gou">我的购物车<i id="i_totalnum_top">0</i></a>
+            <em id="biao" style="display: none;"></em>
+			<div class="ware_list" id="ware_list" style="display: none;">
+	<!--========================有商品===========================-->
+                <div class="you" id="cart_yes" style="display: none;">
+                    <h2>最新加入商品</h2>
+                    <ul class="bd description2" id="wrasList"></ul>
+                    <div class="ft">
+                        <span><a style="cursor:pointer" id="btnCart">去购物车</a></span>
+                        <font>共<i id="i_totalnum">0</i>件商品</font>
+                        <font>合计<b id="i_totalprice">￥0.00</b>元</font>
+                    </div>
+                </div>
+	<!--========================没有商品=========================-->
+                <div class="wu" style="" id="cart_no">
+                    购物车中还没有商品，赶紧去选购吧
+                </div>
+			</div>
+		</div>
+	</div>
+    <!--=========================nav===========================-->
+    <div class="nav">
+        <b id="nav1">
+                全部商品分类
+            <div class="pop description ps-container" id="navMain" style="display: block;">
+                <div class="" id="pop">
+                    <a href="html/list/list.html" id="li_level_0">海外购</a>
+                    <a href="html/list/list.html" id="li_level_1">生活电器</a>
+                    <a href="html/list/list.html" id="li_level_2">品质厨房</a>
+                    <a href="html/list/list.html" id="li_level_3">厨房电器</a>
+                    <a href="html/list/list.html" id="li_level_4">生活家居</a>
+                    <a href="html/list/list.html" id="li_level_5">家纺</a>
+                    <a href="html/list/list.html" id="li_level_6">服装服饰</a>
+                    <a href="html/list/list.html" id="li_level_7">箱包配饰</a>
+                    <a href="html/list/list.html" id="li_level_8">美妆个护</a>
+                    <a href="html/list/list.html" id="li_level_9">食品饮料</a>
+                    <a href="html/list/list.html" id="li_level_10">运动健康</a>
+                    <a href="html/list/list.html" id="li_level_11">3C数码</a>
+                    <a href="html/list/list.html" id="li_level_12">宠物用品</a>
+                </div>
+            </div>
+        </b>
+        <ul>
+            <li>
+                <a href="#" class="curr" style="cursor:pointer" target="_self">首页</a>
+            </li>
+            <li>
+                <a style="cursor:pointer">TV直播</a>
+            </li>
+            <li>
+                <a style="cursor:pointer">品牌惠</a></li>
+            <li>
+                <a style="cursor:pointer" target="_blank">惠家有APP</a>
+            </li>
+            <li>
+                <a href="#" target="_blank" style="cursor:pointer">家有尊享</a>
+            </li>
+        </ul>
+	</div>
+</div>
+<!--===========main================= -->
+<div id="main">
+    <div id="topThree" class="fl">
+<!--=============轮播=================--> 
+        <div class="carousel">
+			<div class="pic">
+				<ul>
+					<li>
+						<img class="img0" src="img/lun_a1.jpg"/>
+					</li>
+					<li>
+						<img class="img0" src="img/lun_a2.jpg"/>
+					</li>
+					<li>
+						<img class="img0" src="img/lun_a3.jpg"/>
+					</li>
+					<li>
+						<img class="img0" src="img/lun_a4.jpg"/>
+					</li>
+					<li>
+						<img class="img0" src="img/lun_a5.jpg"/>
+					</li>
+				</ul>
+			</div>
+			<div class="dongdian">
+				<ul></ul>
+			</div>
+			<a class="btn_prev">〈</a>
+			<a class="btn_next">〉</a>
+		</div>
+        <!--================中下小图=======================-->
+        <div class="ad1"><img src="img/banner_a1.jpg"></div>
+        <div class="ad1"><img src="img/banner_a2.jpg"></div>
+    </div>
+	<div class="fr">
+		<div class="personal" id="accountInfo">
+            <!--============未登录=============-->
+            <div class="no" style="">
+                <div class="hd">
+                    <img src="img/dome_07.png" alt="">
+                    <i>hi！欢迎来到惠家有</i>
+                </div>
+                <a class="dl" style="cursor:pointer;" href="file:///G:/huijiawork/src/html/login/login.html" target="_blank">登 录</a>
+                <p><a style="cursor:pointer;" href="file:///G:/huijiawork/src/html/register/register.html" target="_blank">免费注册</a></p>
+            </div>
+            <!--============已登录===============-->
+            <div class="yes" style="display:none;">
+                <div class="hd" style="cursor:pointer;">
+                <a>
+                
+                    <i id="LoginName">hi！</i>
+                </a>
+                </div>
+                <ul>
+                    <li>
+                        <a>待收货<i id="DSH">0</i></a>
+                    </li>
+                    <li>
+                        <a>待发货<i id="DFH">0</i></a>
+                    </li>
+                    <li>
+                        <a>待付款<i id="DFK">0</i></a>
+                    </li>
+                </ul>
+            </div>
+    		
+    <!--===================电话和小图============================= -->
+            <div class="conve-list">
+                <div class="hd">4008-678-210</div>
+                <ul>
+                    <li>
+                        <a style="cursor:pointer">
+                        <i class="i1"></i>直播<br>节目表
+                        </a>
+                    </li>
+                    <li>
+                        <a style="cursor:pointer">
+                        <i class="i2"></i>掌上<br>购物
+                        </a>
+                    </li>
+                    <li>
+                        <a style="cursor:pointer">
+                        <i class="i3"></i>物流<br>查询
+                        </a>
+                    </li>
+                    <li>
+                        <a style="cursor:pointer" >
+                        <i class="i4"></i>会员<br>中心
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+<!--===================秒杀=========================== -->
+            <div class="goods-hd" id="rightAd">
+            <h2><span></span>今日秒杀     10/20点准时开抢</h2>
+            <ul>
+                <li>
+                    <a>
+                        <img src="img/sha_a.jpg" alt="">
+                        <i>立即抢购</i>
+                    </a>
+                </li>
+                <li>
+                    <a>
+                        <img src="img/yu_a.jpg" alt="">
+                        <i>立即抢购</i>
+                    </a>
+                </li>
+            </ul>
+            </div>
+		</div>
+	</div>
+<!--=====================通知============================== -->
+    <div class="inform">
+    	<img src="img/inform.jpg">
+    </div>    
+<!--======================TV直播=========================== -->
+    <div class="live-list">
+        <div class="hd">
+            <h2>TV直播—已省30元</h2>
+        </div> 
+        <div class="bd">
+            <ul id="list1">
+                <li>
+                    <a>
+                        <img src="img/list_a1.jpg">
+                        <span class="s1">正在直播...</span>
+                        <b>艾兰得氨糖软骨素维生素D钙片30片/瓶*10瓶 赠...</b>
+                        <font>￥268<i>￥447</i></font>
+                    </a>
+                </li>
+                
+                <li>
+                    <a>
+                        <img src="img/list_a2.jpg">
+                        <span>15:35 - 16:15</span>
+                        <b>新西兰·纽仕兰牧场麦卢卡蜂蜜配方奶粉800克*2罐...</b>
+                        <font>￥468<i>￥747</i></font>
+                    </a>
+                </li>
+                
+                <li>
+                    <a>
+                        <img src="img/list_a3.jpg">
+                        <span>16:15 - 16:55</span>
+                        <b>花花公子 经典条纹男士POLO衫2件 赠T恤2件</b>
+                        <font>￥228<i>￥597</i></font>
+                    </a>
+                </li>
+                
+                <li>
+                    <a>
+                        <img src="img/list_a4.jpg">
+                        <span>16:55 - 17:35</span>
+                        <b>恒源祥男士内裤10条  赠T恤*2</b>
+                        <font>￥268<i>￥447</i></font>
+                    </a>
+                </li>
+            
+                <li>
+                    <a>
+                        <img src="img/list_a5.jpg">
+                        <span>17:35 - 18:15</span>
+                        <b>捷赛智能厨师锅 自动烹饪锅JSC-D122</b>
+                        <font>￥368<i>￥596</i></font>
+                    </a>
+                </li>
+			</ul>
+            <a class="prev"></a>
+            <a class="next"></a>
+        </div>
+	</div>
+    <!--================限时抢购=====================-->
+    <div class="live-list panic-list">
+        <div class="hd">
+            <h2>限时抢购
+                <font name="countDown">距离本次结束还有：<i>03</i>时<i>09</i>分<i>19</i>秒</font>
+            </h2>
+        </div>
+        <div class="bd">
+        <!--==结束的时候clas="end"做显示===-->
+            <div class="end" name="fastButEnd" style="display:none;">本场抢购<br>已结束</div>
+            <ul id="list2">
+                <li>
+                    <a>           
+                        <img src="img/panic-list_a1.jpg">
+                        <span>2.1折</span>
+                        <b>红月亮免手洗平板拖把</b>
+                        <font>￥62<i>￥298</i></font>
+                        <strong>立即抢购</strong>
+                    </a>
+                </li>
+            
+                <li>
+                    <a>  
+                        <img src="img/panic-list_a2.jpg">
+                        <span>3.4折</span>
+                        <b>格林盈璐孕妇婴儿用静音无辐射灭蚊器</b>
+                        <font>￥159<i>￥468</i></font>
+                        <strong>立即抢购</strong>
+                    </a>
+                </li>
+            
+                <li>
+                    <a>
+                        <img src="img/panic-list_a3.jpg">
+                        <span>5.7折</span>
+                        <b>爱仕达不粘套装锅 橙色（炒锅+汤锅+煎锅+奶锅+木...</b>
+                        <font>￥258<i>￥449</i></font>
+                        <strong>立即抢购</strong>
+                    </a>
+                </li>
+            
+                <li>
+                    <a> 
+                        <img src="img/panic-list_a4.jpg">
+                        <span>5.3折</span>
+                        <b>纳薇十字纹牛皮手袋+钱包（颜色可选）</b>
+                        <font>￥398<i>￥747</i></font>
+                        <strong>立即抢购</strong>
+                    </a>
+                </li>
+            
+                <li>
+                    <a>   
+                        <img src="img/panic-list_a5.jpg">
+                        <span>5.1折</span>
+                        <b>尼蔻微电波紧肤嫩白美容仪 赠鱼胶蛋白精华2支</b>
+                        <font>￥458<i>￥897</i></font>
+                        <strong>立即抢购</strong>
+                    </a>
+                </li>
+            </ul>
+            <a class="prev"></a>
+            <a class="next"></a>
+        </div>
+    </div>
+<!--===============楼梯nav=======================-->
+    <div id="lou_nav">
+        <ul>
+            <li class="hover">1F <span>家居</span> </li>
+            <li>2F <span>美妆</span> </li>
+            <li>3F <span>美饰</span> </li>
+            <li>4F <span>食品</span> </li>
+            <li>5F <span>电器</span> </li>
+            <li class="last">Top</li>
+        </ul>
+    </div>  
+<!--============楼梯结束=============================== -->
+<!--=================1楼======================= -->
+	<div class="floor">
+		<div class="fl">
+			<div class="hd"><h2>1F  品质家居</h2></div>
+			<div class="bd">
+				<div class="left">
+                    <b>
+                        <a><img src="img/f1_a1.jpg"></a>
+                    </b>
+                    <p>                                   
+                        <a><img src="img/f1_a2.jpg"></a>
+                        <a><img src="img/f1_a3.jpg"></a>
+                        <a><img src="img/f1_a4.jpg"></a>
+                        <a><img src="img/f1_a5.jpg"></a>
+                        <a><img src="img/f1_a6.jpg"></a>
+                        <a><img src="img/f1_a7.jpg"></a>          
+                    </p>
+				</div>
+            <!--================轮播==================-->               
+				<div class="right">
+					<div class="focus">
+						<ul style="position: relative; width: 580px; height: 310px;" class="hd" name="cont2">
+                            <li style="position: absolute; width: 580px; left: 0px; top: 0px;">
+                            <a><img src="img/lun_b1.jpg"></a>
+                            </li>
+						</ul>
+                        <a style="opacity: 0.5;" class="prev" name="prev2"></a>
+                        <a style="opacity: 0.5;" class="next" name="next2"></a>
+                        <div class="num" name="num2">
+                            <ul>
+                            <li class="on">1</li>
+                            </ul>
+                        </div>
+                    </div>
+         <!--================中下================ -->                 
+                    <div class="ad3">
+                    	<a><img src="img/banner_b1.jpg"></a>
+                    </div>
+                
+                    <div class="ad3">
+                    	<a><img src="img/banner_b2.jpg"></a>
+                    </div>
+                
+                    <div class="ad4">
+                    	<a><img src="img/banner_b3.jpg"></a>
+                    </div>
+            	</div>
+        	</div>
+    	</div>
+        <!--================右边================== -->
+		<div class="fr selling">
+    		<div class="hd"><h2>本月热销榜</h2></div>
+    			<ul class="bd" module="202010">
+					<li>
+						<a>
+                            <i class="i1">1</i>
+                            <img src="img/banner_b1.jpg"/>
+                            <b>贝尔莱德蒸汽挂烫机 赠家毅微型缝纫机1个</b>
+                            <em>￥299</em>
+						</a>
+					</li>
+
+                    <li>
+                    	<a>
+                            <i class="i2">2</i>
+                            <img src="img/banner_b2.jpg"/>
+                            <b>韩国·CASAMARU两人位收纳凳1个、单人位收纳...</b>
+                            <em>￥399</em>
+						</a>
+					</li>
+
+                    <li>
+                        <a>
+                            <i class="i3">3</i>
+                            <img src="img/banner_b3.jpg"/>
+                            <b>思家旺电动扫拖一体机*2台</b>
+                            <em>￥299</em>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a>
+                            <img src="img/banner_b4.jpg"/>
+                            <b>卡罗莎360度旋转收纳鞋柜（颜色可选）</b>
+                            <em>￥1980</em>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a>
+                            <img src="img/banner_b5.jpg"/>
+                            <b>V6家用电动螺丝刀工具箱*1组  赠魔术锯*1组</b>
+                            <em>￥299</em>
+                        </a>
+                    </li>
+    			</ul>
+			</div>
+		</div>
+	</siv>
+
+	<!--=================2楼======================= -->
+	<div class="floor">
+		<div class="fl">
+			<div class="hd"><h2>2F  美妆个护</h2></div>
+			<div class="bd">
+				<div class="left">
+                    <b>
+                        <a><img src="img/f2_a1.jpg"></a>
+                    </b>
+                    <p>                                   
+                        <a><img src="img/f1_a2.jpg"></a>
+                        <a><img src="img/f1_a3.jpg"></a>
+                        <a><img src="img/f1_a4.jpg"></a>
+                        <a><img src="img/f1_a5.jpg"></a>
+                        <a><img src="img/f1_a6.jpg"></a>
+                        <a><img src="img/f1_a7.jpg"></a>         
+                    </p>
+				</div>
+            	<!--==============轮播=================-->               
+				<div class="right">
+					<div class="focus">
+						<ul style="position: relative; width: 580px; height: 310px;" class="hd" name="cont2">
+                            <li style="position: absolute; width: 580px; left: 0px; top: 0px;">
+                            <a><img src="img/lunf2_a1.jpg"></a>
+                            </li>
+						</ul>
+                        <a style="opacity: 0.5;" class="prev" name="prev2"></a>
+                        <a style="opacity: 0.5;" class="next" name="next2"></a>
+                        <div class="num" name="num2">
+                            <ul>
+                            <li class="on">1</li>
+                            </ul>
+                        </div>
+                    </div>
+        <!--================中下===================-->                 
+                    <div class="ad3">
+                    	<a><img src="img/banner_b1.jpg"></a>
+                    </div>
+                
+                    <div class="ad3">
+                    	<a><img src="img/banner_b2.jpg"></a>
+                    </div>
+                
+                    <div class="ad4">
+                    	<a><img src="img/banner_b3.jpg"></a>
+                    </div>
+            	</div>
+        	</div>
+    	</div>
+        <!--===============右边=================-->
+		<div class="fr selling">
+    		<div class="hd"><h2>本月热销榜</h2></div>
+    			<ul class="bd" module="202010">
+					<li>
+						<a>
+                            <i class="i1">1</i>
+                            <img src="img/banner_b1.jpg"/>
+                            <b>贝尔莱德蒸汽挂烫机 赠家毅微型缝纫机1个</b>
+                            <em>￥299</em>
+						</a>
+					</li>
+
+                    <li>
+                    	<a>
+                            <i class="i2">2</i>
+                            <img src="img/banner_b2.jpg"/>
+                            <b>韩国·CASAMARU两人位收纳凳1个、单人位收纳...</b>
+                            <em>￥399</em>
+						</a>
+					</li>
+
+                    <li>
+                        <a>
+                            <i class="i3">3</i>
+                            <img src="img/banner_b3.jpg"/>
+                            <b>思家旺电动扫拖一体机*2台</b>
+                            <em>￥299</em>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a>
+                            <img src="img/banner_b4.jpg"/>
+                            <b>卡罗莎360度旋转收纳鞋柜（颜色可选）</b>
+                            <em>￥1980</em>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a>
+                            <img src="img/banner_b5.jpg"/>
+                            <b>V6家用电动螺丝刀工具箱*1组  赠魔术锯*1组</b>
+                            <em>￥299</em>
+                        </a>
+                    </li>
+    			</ul>
+			</div>
+		</div>
+	</siv>
+	
+    <!--=================3楼======================= -->
+	<div class="floor">
+		<div class="fl">
+			<div class="hd"><h2>3F  美妆美饰</h2></div>
+			<div class="bd">
+				<div class="left">
+                    <b>
+                        <a><img src="img/f3_a1.jpg"></a>
+                    </b>
+                    <p>                                   
+                        <a><img src="img/f1_a2.jpg"></a>
+                        <a><img src="img/f1_a3.jpg"></a>
+                        <a><img src="img/f1_a4.jpg"></a>
+                        <a><img src="img/f1_a5.jpg"></a>
+                        <a><img src="img/f1_a6.jpg"></a>
+                        <a><img src="img/f1_a7.jpg"></a>          
+                    </p>
+				</div>
+            <!--=================轮播====================-->               
+				<div class="right">
+					<div class="focus">
+						<ul style="position: relative; width: 580px; height: 310px;" class="hd" name="cont2">
+                            <li style="position: absolute; width: 580px; left: 0px; top: 0px;">
+                            <a><img src="img/lunf3_a1.jpg"></a>
+                            </li>
+						</ul>
+                        <a style="opacity: 0.5;" class="prev" name="prev2"></a>
+                        <a style="opacity: 0.5;" class="next" name="next2"></a>
+                        <div class="num" name="num2">
+                            <ul>
+                            <li class="on">1</li>
+                            </ul>
+                        </div>
+                    </div>
+         <!--===============中下=================== -->                 
+                    <div class="ad3">
+                    	<a><img src="img/banner_b1.jpg"></a>
+                    </div>
+                
+                    <div class="ad3">
+                    	<a><img src="img/banner_b2.jpg"></a>
+                    </div>
+                
+                    <div class="ad4">
+                    	<a><img src="img/banner_b3.jpg"></a>
+                    </div>
+            	</div>
+        	</div>
+    	</div>
+        <!--=================右边=================== -->
+		<div class="fr selling">
+    		<div class="hd"><h2>本月热销榜</h2></div>
+    			<ul class="bd" module="202010">
+					<li>
+						<a>
+                            <i class="i1">1</i>
+                            <img src="img/banner_b1.jpg"/>
+                            <b>贝尔莱德蒸汽挂烫机 赠家毅微型缝纫机1个</b>
+                            <em>￥299</em>
+						</a>
+					</li>
+
+                    <li>
+                    	<a>
+                            <i class="i2">2</i>
+                            <img src="img/banner_b2.jpg"/>
+                            <b>韩国·CASAMARU两人位收纳凳1个、单人位收纳...</b>
+                            <em>￥399</em>
+						</a>
+					</li>
+
+                    <li>
+                        <a>
+                            <i class="i3">3</i>
+                            <img src="img/banner_b3.jpg"/>
+                            <b>思家旺电动扫拖一体机*2台</b>
+                            <em>￥299</em>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a>
+                            <img src="img/banner_b4.jpg"/>
+                            <b>卡罗莎360度旋转收纳鞋柜（颜色可选）</b>
+                            <em>￥1980</em>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a>
+                            <img src="img/banner_b5.jpg"/>
+                            <b>V6家用电动螺丝刀工具箱*1组  赠魔术锯*1组</b>
+                            <em>￥299</em>
+                        </a>
+                    </li>
+    			</ul>
+			</div>
+		</div>
+	</siv>
+	<!--=================4楼======================= -->
+	<div class="floor">
+		<div class="fl">
+			<div class="hd"><h2>4F  食品保健</h2></div>
+			<div class="bd">
+				<div class="left">
+                    <b>
+                        <a><img src="img/f4_a1.jpg"></a>
+                    </b>
+                    <p>                                   
+                        <a><img src="img/f1_a2.jpg"></a>
+                        <a><img src="img/f1_a3.jpg"></a>
+                        <a><img src="img/f1_a4.jpg"></a>
+                        <a><img src="img/f1_a5.jpg"></a>
+                        <a><img src="img/f1_a6.jpg"></a>
+                        <a><img src="img/f1_a7.jpg"></a>          
+                    </p>
+				</div>
+            <!--===================轮播================-->               
+				<div class="right">
+					<div class="focus">
+						<ul style="position: relative; width: 580px; height: 310px;" class="hd" name="cont2">
+                            <li style="position: absolute; width: 580px; left: 0px; top: 0px;">
+                            <a><img src="img/lunf4_a1.jpg"></a>
+                            </li>
+						</ul>
+                        <a style="opacity: 0.5;" class="prev" name="prev2"></a>
+                        <a style="opacity: 0.5;" class="next" name="next2"></a>
+                        <div class="num" name="num2">
+                            <ul>
+                            <li class="on">1</li>
+                            </ul>
+                        </div>
+                    </div>
+          <!--=================中下===================-->                 
+                    <div class="ad3">
+                    	<a><img src="img/banner_b1.jpg"></a>
+                    </div>
+                
+                    <div class="ad3">
+                    	<a><img src="img/banner_b2.jpg"></a>
+                    </div>
+                
+                    <div class="ad4">
+                    	<a><img src="img/banner_b3.jpg"></a>
+                    </div>
+            	</div>
+        	</div>
+    	</div>
+        <!--=================右边===================-->
+		<div class="fr selling">
+    		<div class="hd"><h2>本月热销榜</h2></div>
+    			<ul class="bd" module="202010">
+					<li>
+						<a>
+                            <i class="i1">1</i>
+                            <img src="img/banner_b1.jpg"/>
+                            <b>贝尔莱德蒸汽挂烫机 赠家毅微型缝纫机1个</b>
+                            <em>￥299</em>
+						</a>
+					</li>
+
+                    <li>
+                    	<a>
+                            <i class="i2">2</i>
+                            <img src="img/banner_b2.jpg"/>
+                            <b>韩国·CASAMARU两人位收纳凳1个、单人位收纳...</b>
+                            <em>￥399</em>
+						</a>
+					</li>
+
+                    <li>
+                        <a>
+                            <i class="i3">3</i>
+                            <img src="img/banner_b3.jpg"/>
+                            <b>思家旺电动扫拖一体机*2台</b>
+                            <em>￥299</em>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a>
+                            <img src="img/banner_b4.jpg"/>
+                            <b>卡罗莎360度旋转收纳鞋柜（颜色可选）</b>
+                            <em>￥1980</em>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a>
+                            <img src="img/banner_b5.jpg"/>
+                            <b>V6家用电动螺丝刀工具箱*1组  赠魔术锯*1组</b>
+                            <em>￥299</em>
+                        </a>
+                    </li>
+    			</ul>
+			</div>
+		</div>
+	</siv>
+	<!--=================5楼======================= -->
+	<div class="floor">
+		<div class="fl">
+			<div class="hd"><h2>5F  生活电器</h2></div>
+			<div class="bd">
+				<div class="left">
+                    <b>
+                        <a><img src="img/f5_a1.jpg"></a>
+                    </b>
+                    <p>                                   
+                        <a><img src="img/f1_a2.jpg"></a>
+                        <a><img src="img/f1_a3.jpg"></a>
+                        <a><img src="img/f1_a4.jpg"></a>
+                        <a><img src="img/f1_a5.jpg"></a>
+                        <a><img src="img/f1_a6.jpg"></a>
+                        <a><img src="img/f1_a7.jpg"></a>          
+                    </p>
+				</div>
+            <!--===========轮播===========-->               
+				<div class="right">
+					<div class="focus">
+						<ul style="position: relative; width: 580px; height: 310px;" class="hd" name="cont2">
+                            <li style="position: absolute; width: 580px; left: 0px; top: 0px;">
+                            <a><img src="img/lunf5_a1.jpg"></a>
+                            </li>
+						</ul>
+                        <a style="opacity: 0.5;" class="prev" name="prev2"></a>
+                        <a style="opacity: 0.5;" class="next" name="next2"></a>
+                        <div class="num" name="num2">
+                            <ul>
+                            <li class="on">1</li>
+                            </ul>
+                        </div>
+                    </div>
+               <!--===========中下============== -->                 
+                    <div class="ad3">
+                    	<a><img src="img/banner_b1.jpg"></a>
+                    </div>
+                
+                    <div class="ad3">
+                    	<a><img src="img/banner_b2.jpg"></a>
+                    </div>
+                
+                    <div class="ad4">
+                    	<a><img src="img/banner_b3.jpg"></a>
+                    </div>
+            	</div>
+        	</div>
+    	</div>
+                <!--===========右边============== -->
+		<div class="fr selling">
+    		<div class="hd"><h2>本月热销榜</h2></div>
+    			<ul class="bd" module="202010">
+					<li>
+						<a>
+                            <i class="i1">1</i>
+                            <img src="img/banner_b1.jpg"/>
+                            <b>贝尔莱德蒸汽挂烫机 赠家毅微型缝纫机1个</b>
+                            <em>￥299</em>
+						</a>
+					</li>
+
+                    <li>
+                    	<a>
+                            <i class="i2">2</i>
+                            <img src="img/banner_b2.jpg"/>
+                            <b>韩国·CASAMARU两人位收纳凳1个、单人位收纳...</b>
+                            <em>￥399</em>
+						</a>
+					</li>
+
+                    <li>
+                        <a>
+                            <i class="i3">3</i>
+                            <img src="img/banner_b3.jpg"/>
+                            <b>思家旺电动扫拖一体机*2台</b>
+                            <em>￥299</em>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a>
+                            <img src="img/banner_b4.jpg"/>
+                            <b>卡罗莎360度旋转收纳鞋柜（颜色可选）</b>
+                            <em>￥1980</em>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a>
+                            <img src="img/banner_b5.jpg"/>
+                            <b>V6家用电动螺丝刀工具箱*1组  赠魔术锯*1组</b>
+                            <em>￥299</em>
+                        </a>
+                    </li>
+    			</ul>
+			</div>
+		</div>
+	</siv>
+    <!--====================猜你喜欢================================ -->
+    <div class="live-list">
+            <div class="hd">
+                <h2>猜你喜欢</h2>
+            </div> 
+            <div class="bd">
+                <ul id="list1">
+                    <li>
+                        <a>
+                            <img src="img/list_a1.jpg">
+                            <span class="s1">正在直播...</span>
+                            <b>艾兰得氨糖软骨素维生素D钙片30片/瓶*10瓶 赠...</b>
+                            <font>￥268<i>￥447</i></font>
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a>
+                            <img src="img/list_a2.jpg">
+                            <span>15:35 - 16:15</span>
+                            <b>新西兰·纽仕兰牧场麦卢卡蜂蜜配方奶粉800克*2罐...</b>
+                            <font>￥468<i>￥747</i></font>
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a>
+                            <img src="img/list_a3.jpg">
+                            <span>16:15 - 16:55</span>
+                            <b>花花公子 经典条纹男士POLO衫2件 赠T恤2件</b>
+                            <font>￥228<i>￥597</i></font>
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a>
+                            <img src="img/list_a4.jpg">
+                            <span>16:55 - 17:35</span>
+                            <b>恒源祥男士内裤10条  赠T恤*2</b>
+                            <font>￥268<i>￥447</i></font>
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a>
+                            <img src="img/list_a5.jpg">
+                            <span>17:35 - 18:15</span>
+                            <b>捷赛智能厨师锅 自动烹饪锅JSC-D122</b>
+                            <font>￥368<i>￥596</i></font>
+                        </a>
+                    </li>
+                </ul>
+                <a class="prev"></a>
+                <a class="next"></a>
+            </div>
+        </div>
+    </div>
+</div>
+<!--============返回顶部============-->
+<ul class="drift">
+    <li class="l1">
+        <a href="#">
+            <strong class="tan2">
+                <i></i>
+                <span></span>
+                <img src="img/ewm02.jpg">
+                <em>惠家有APP</em>
+            </strong>
+        </a>
+    </li>
+    <li class="l2">
+        <a href="#">
+            <strong class="tan2">
+                <i></i>
+                <span></span>
+                <img src="img/ewm01.jpg">
+                <em>惠家有微信</em>
+            </strong>
+        </a>
+    </li>
+    <li style="display: list-item;" class="l3" id="back-to-top">
+        <a href="#">返回顶部</a>
+    </li>
+</ul>
+
+
+<!--=============底部============== -->
+<ul class="warrant" id="ul_warrant">
+	<li class="l1">
+		<b>100%正品保证</b>
+		<i>质量有保障</i>
+	</li>
+	<li class="l2">
+		<b>在线支付 全场包邮</b>
+		<i>送货上门</i>
+	</li>
+		<li class="l3">
+		<b>支持银联刷卡付款</b>
+	<i>付款更安全</i>
+	</li>
+    <li class="l4">
+		<b>货到付款 开箱验货</b>
+		<i>满意才收货</i>
+	</li>
+	<li class="l5">
+		<b>7x24小时人工服务</b>
+		<i>微笑无时无刻 4008-678-210</i>
+	</li>
+</ul>
+
+<!--=================foot======================= -->
+<div class="foot">
+	<div class="cont">
+		<div class="fl" id="div_title_index">
+			<dl>
+				<dt>
+				<a>关于我们</a>
+				</dt>
+				<dd>
+					<a>公司介绍</a>
+				</dd>
+				<dd>
+					<a>招聘信息</a>
+				</dd>
+				<dd>
+					<a>联系我们</a>
+				</dd>
+				<dd>
+					<a>用户隐私条款</a>
+				</dd>
+			</dl>
+
+			<dl>
+				<dt>
+					<a>订购指南</a>
+				</dt>
+				<dd>
+					<a>交易条款</a>
+				</dd>
+				<dd>
+					<a>注册/购物流程</a>
+				</dd>
+				<dd>
+					<a>退/换货</a>
+				</dd>
+				<dd>
+					<a>积分说明</a>
+				</dd>
+				<dd>
+					<a>发票指南</a>
+				</dd>
+				<dd>
+					<a>会员制度说明</a>
+				</dd>
+			</dl>
+            
+			<dl>
+				<dt>
+					<a>配送服务</a>
+				</dt>
+				<dd>
+					<a>配送区域</a>
+				</dd>
+				<dd>
+					<a>配送时间</a>
+				</dd>
+				<dd>
+					<a>验货与签收</a>
+				</dd>
+			</dl>
+            
+			<dl>
+				<dt>
+					<a>支付方式</a>
+				</dt>
+				<dd>
+					<a>网上支付</a>
+				</dd>
+				<dd>
+					<a>货到付款</a>
+				</dd>
+			</dl>
+
+			<dl>
+				<dt>
+					<a>合作专区</a>
+				</dt>
+				<dd>
+					<a>成为供应商</a>
+				</dd>
+				<dd>
+					<a>供应商系统</a>
+				</dd>
+				<dd>
+					<a>合作伙伴</a>
+				</dd>
+			</dl>
+		</div>
+        <div class="fr">
+            <ul class="hd">
+                <li><img src="img/ewm01.jpg">惠家有微信</li>
+                <li><img src="img/ewm02.jpg">惠家有APP</li>
+            </ul>
+            <p>
+                <b>4008-678-210</b>
+                <i>客服 7x24小时 (全年无休)</i>
+            </p>
+        </div>
+    </div>
+</div>
+<!--===================footer============================ -->   
+<div class="footer">
+    <div class="cont">
+        <p style="display:none">
+            <a>关于家有</a>
+            <span>|</span>
+            <a>媒体关注</a>
+            <span>|</span>
+            <a>联系我们</a>
+            <span>|</span>
+            <a>诚聘英才</a>
+            <span>|</span>
+            <a>校园招聘</a>
+            <span>|</span>
+            <a>全部品牌</a>
+            <span>|</span>
+            <a>投诉建议</a>
+        </p>
+        <p id="friendLinkList">友情链接： 
+            <a>南京手机报价</a> <a>竞拍</a> 
+            <a>奥莱购</a> 
+            <a>商品百科</a>
+        </p>
+        <p>Copyright © 2008-2013 huijiayou.cn <a>家有购物集团有限公司北京分公司</a> 版权所有 黔ICP备13002365号  增值电信业务经营许可证：黔B2-20120036</p>
+    </div>
+</div>
+<script src="js/common.js"></script>
+<script src="js/jquery-1.12.0.js"></script>
+<script src="js/index.js"></script>
+<!-- 
+<script>
+$(function(){
+		var $carousel = $('.carousel');
+		var $pic = $carousel.children('.pic');
+		var $dongdian = $carousel.children('.dongdian');
+		var $li = $pic.find('li');
+		var $ul = $('.dongdian ul');
+		var $btn_prev = $('.btn_prev');
+		var $btn_next = $('.btn_next');
+		var index = 0;
+		//图片数量
+		var len = $pic.find('li').length;
+		//将li加入ul
+		for(var i=0;i<len;i++){
+			$('<li/>').appendTo($ul).html(i+1);
+		};
+		$dongdian.append($ul);
+		//初始状态
+		show();
+		var timer;	//声明定时器
+		// 鼠标移入清除定时器，鼠标移出重启定时器
+		$carousel.on('mouseenter',function(){
+			clearInterval(timer);
+		}).on('mouseleave',function(){
+			timer = setInterval(carousel,4000);
+		}).trigger('mouseleave');
+		//点击li切换
+		$dongdian.on('click','li',function(){
+			index=$(this).index();
+			show();	
+		})
+		$btn_prev.on('click',function(){
+			index--;
+			show();	
+		})
+		$btn_next.on('click',function(){
+			index++;
+			show();	
+		})
+		//轮播函数
+		function carousel(){
+			index++;
+			show();
+		}
+		//图片显示函数
+		function show(){
+			if(index<0){
+				index = len-1;
+			}else if(index>=len){
+				index = 0;
+			};
+			$li.find('.img0').css({"opacity":0}).eq(index).animate({opacity:1},1000)
+
+			$li.eq(index).show().siblings().hide();
+			
+			$dongdian.find('li').eq(index).addClass('select').siblings().removeClass('select');
+		}
+});
+</script>
+<script>
+	$(function(){
+		// 1、获取页面元素
+		var $nav = $('#lou_nav');
+		var $floor = $('.floor');
+
+		// 2、滚动
+		$(window).on('scroll',function(){
+			var scrollTop = $(window).scrollTop();
+			// 1、滚动距离大于1200，显示楼层导航，小于1200时隐藏
+			if(scrollTop > 1200){
+				$nav.fadeIn('slow');//600
+			}else{
+				$nav.fadeOut('fast');//200
+			}
+
+			// 2>滚动到某一楼层时，高亮显示导航对应楼层
+			// 得到当前楼层的index值
+			$floor.each(function(idx,ele){
+				if(scrollTop >= $(ele).offset().top && scrollTop < $(ele).offset().top + $(ele).outerHeight()/2){
+					$nav.find('li').not('.last').removeClass('hover').eq(idx).addClass('hover');
+
+					// 退出循环
+					return false;
+				}
+			});
+		});
+		
+		// 3、点击楼层导航，跳转到相应楼层
+		$nav.on('click','li',function(){
+			var index = $(this).index();
+			var top;
+			if($(this).hasClass('last')){
+				top = 0;
+			}else{
+				top = $floor.eq(index).offset().top;
+			}
+			// $(window).scrollTop(top);
+			$('html,body').animate({scrollTop:top});
+		});
+	});
+</script>-->
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

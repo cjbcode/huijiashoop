@@ -1,0 +1,154 @@
+@charset "utf-8";
+/* CSS Document */
+/*=========register============*/
+.register {
+    width: 1040px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    overflow: hidden;
+    background: #fff;
+    padding: 80px;
+}
+.register .fl {
+    width: 590px;
+    float: left;
+    overflow: hidden;
+}
+.register .fl ul li {
+    overflow: hidden;
+    height: 40px;
+    line-height: 40px;
+    margin-bottom: 20px;
+}
+.register .fl ul li b {
+    display: block;
+    width: 80px;
+    font-size: 14px;
+    color: #666;
+    float: left;
+    text-align: right;
+    margin-right: 12px;
+}
+.register .fl ul li b i {
+    color: #dc0f50;
+    font-size: 14px;
+    margin-right: 3px;
+}
+.register .fl ul li input {
+    width: 263px;
+    padding: 9px 20px;
+    height: 20px;
+    border: 1px solid #d6d6d6;
+    color: #666;
+    float: left;
+    margin-right: 15px;
+}
+/*=============提示信息================*/
+.login .fr .bd ul li em, .register .fl ul li em, .add_pop .cont ul li span, .homepage .modify li span {
+    width: 20px;
+    height: 20px;
+    float: left;
+    background: url(img/correct_bg.png) no-repeat;
+    margin-top: 10px;
+}
+.register .fl ul li em.e1, .add_pop .cont ul li span.s1, .homepage .modify li span.s1 {
+    background: url(img/error_bg.png) no-repeat 0 center;
+    font-size: 14px;
+    color: #e92d2f;
+    width: auto;
+    padding-left: 22px;
+    margin: 0;
+    line-height: 38px;
+    height: 40px;
+}
+/*========验证码==========*/
+.register .fl ul li input.text {
+    width: 138px;
+}
+#txtValidCode{
+	width: 90px;
+    padding: 9px 0 9px 20px;
+    height: 20px;
+    border: 1px solid #d6d6d6;
+    color: #666;
+    float: left;
+    margin-right: 5px;
+	}
+#checkCode{
+	height:38px;
+	width:76px;
+	display:block;
+	border:1px solid #ddd;
+	float:left;
+	margin-left:-15px;
+	margin-right:14px;
+	text-align:center;
+	line-height:38px;
+	}
+.register .fl ul li button {
+    width: 110px;
+    height: 40px;
+    border: none;
+    text-align: center;
+    line-height: 40px;
+    background: #dc0f50;
+    color: #fff;
+    font-size: 14px;
+    float: left;
+    margin-right: 15px;
+    cursor: pointer;
+}
+/*===========阅读协议=============*/
+.register .fl p {
+    overflow: hidden;
+    margin-top: -15px;
+    text-align: right;
+    padding-right: 193px;
+    height: 48px;
+    line-height: 48px;
+    color: #666;
+    font-size: 14px;
+}
+.register .fl p input {
+    margin: 0 5px 0 0;
+    position: relative;
+    top: 2px;
+}
+.register .fl p a.on {
+    display: inline;
+    background: none;
+    color: #666;
+    font-size: 14px;
+}
+.register .fl p.on a {
+    width: 305px;
+    float: right;
+    height: 40px;
+    line-height: 40px;
+}
+.register .fl font {
+    display: block;
+    line-height: 20px;
+    text-align: right;
+    padding-right: 193px;
+}
+a {
+    cursor: pointer;
+}
+img {
+    height: auto;
+    vertical-align: top;
+}
+.login .fr .bd p a, .register .fl p a {
+    display: block;
+    background: #dc0f50;
+    text-align: center;
+    font-size: 18px;
+    color: #fff;
+}
+.register .fl font a:hover {
+    color: #c00;
+}
+
+
+

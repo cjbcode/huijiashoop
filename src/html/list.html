@@ -1,0 +1,706 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>商品列表</title>
+<link rel="stylesheet" href="../css/common.css"/>
+<link rel="stylesheet" href="../css/list.css"/>
+<script src="../js/common.js"></script>
+</head>
+
+<body>
+<!--==================头部wrap_top===================-->
+<div class="wrap_top">
+    <p>
+        <a class="fl">收藏</a>
+        <a class="shou" href="../index.html">首页</a>
+        <a id="topLogin" href="login.html">请登录</a>
+        <a class="on" id="topLoginName" style="display:none;"></a>
+        <a id="topLoginOut" style="display:none;">退出</a>
+        <a id="topRegister" href="register.html">免费注册</a>
+        <span>|</span>
+        <font id="fontShoppingCart">购物车<a id="shoppingCartNum">0</a>件</font>
+        <a id="myJYH">我的家有</a>
+        <font id="fontDiscount">可用优惠劵<a id="discountNum">0</a>张</font>
+        <a id="myFavourites">我的收藏</a><span>|</span>
+        <label class="iphone">
+        	<a>手机版
+            <strong class="tan">
+                <i></i>
+                <img src="../img/ewm02.jpg"/>
+                <em>惠家有APP</em>
+            </strong>
+            </a>
+        </label>
+        <label class="wx">
+            <a>微信版
+                <strong class="tan">
+                    <i></i>
+                    <img src="../img/ewm01.jpg"/>
+                    <em>惠家有微信</em>
+                </strong>
+            </a>
+        </label>
+    </p>
+</div> 
+     
+<!--========================head=============================-->
+<div class="head">
+	<div class="top">
+        <h1><a href="#"><img src="../img/logo.jpg" alt="惠家有" title="惠家有"></a></h1>
+        <div class="search">
+            <input type="text" id="txtSearch" value="">
+            <a id="btnSearch" class="s1">搜 索</a>
+            <p id="hotWord">
+                <a class="curr">洗衣液</a>
+                <a class="">螺丝刀</a> 
+                <a class="">斧头牌</a> 
+                <a class="">韩束</a> 
+                <a class="">无痕内衣</a> 
+                <a class="">薰衣草</a> 
+                <a class="">双立人</a> 
+                <a class="">申鸿</a> 
+                <a class="">海参</a> 
+            </p>
+            <!--====搜索关联====-->
+            <div class="relevance" id="divAssociate" style="display:none;">
+            </div>
+        </div>
+		<div class="fr" id="gou">
+            <a class="gou">我的购物车<i id="i_totalnum_top">0</i></a>
+            <em id="biao" style="display: none;"></em>
+			<div class="ware_list" id="ware_list" style="display: none;">
+	<!--========================有商品===========================-->
+                <div class="you" id="cart_yes" style="display: none;">
+                    <h2>最新加入商品</h2>
+                    <ul class="bd description2" id="wrasList"></ul>
+                    <div class="ft">
+                        <span><a style="cursor:pointer" id="btnCart">去购物车</a></span>
+                        <font>共<i id="i_totalnum">0</i>件商品</font>
+                        <font>合计<b id="i_totalprice">￥0.00</b>元</font>
+                    </div>
+                </div>
+	<!--========================没有商品=========================-->
+                <div class="wu" style="" id="cart_no">
+                    购物车中还没有商品，赶紧去选购吧
+                </div>
+			</div>
+		</div>
+	</div>
+</div>
+<!--=========================list================================== -->
+<!--=======================内容===================-->
+<div class="main" id="mainContent">
+<div class="search-list" id="searchList" style="">
+    <div class="fl">
+        <h2 id="searchMark">
+        	<a>全部商品</a>
+        </h2>
+        <div class="term">
+            <div class="hd">
+                <dl style="height: 116px;" class="top" id="dlType"> 
+                    <dt>分类</dt>
+                    <dd style="height: 116px;" module="202022">
+                    <a>全部</a>
+                    <a>休闲食品</a>
+                    <a>进口食品</a>
+                    <a>地方特产</a>
+                    <a>饮料冲调</a>
+                    <a>粮油干货</a>
+                    <a>茗茶</a>
+                    <a>食品饮料-电视热销</a>
+                    <a>中外名酒</a>
+                    <a>生鲜食品</a>
+                    <a>保健食品</a>
+                    <a>全球美食</a>
+                    <a>身体护理</a>
+                	</dd> 
+                	<span class="curr">收起</span>
+                </dl>
+                <dl style="height: 58px;" id="dlBrand">
+                    <dt>品牌</dt>
+                    <dd style="height: 58px;">
+                    <a>全部</a>
+                    <a>农博汇</a>
+                    <a>十月初五</a>
+                    <a>阿尔帝</a>
+                    <a>一农</a>
+                    <a>尚珍</a>
+                    <a>百草味</a>
+                    <a>汤臣倍健</a>
+                    <a>品粒品味</a>
+                    <a>哈姆雷特</a>
+                    <a>核工记</a>
+                    <a>西麦</a>
+                    <a>中粮悦活</a>
+                    <a>好日子</a>
+                    <a>德芙</a>
+                    <a>九日</a>
+                    <a>御萃坊</a>
+                    <a>老炊</a>
+                    <a>龙江人家</a>
+                    <a>五粮液</a>
+                    </dd>
+                    <span class="">更多</span>
+                </dl>
+            </div>
+        </div>
+        <div class="filter">
+            <ul>
+                <li class="curr">综合</li>
+                <li>销量<i></i></li>
+                <li>人气<i></i></li>
+                <li>价格<b></b></li>
+                <li id="on" class="curr">
+                    <input id="minPrice" value="" placeholder="￥" type="text">
+                    <span>-</span>
+                    <input id="maxPrice" value="" placeholder="￥" type="text">
+                    <a id="btnPriceSearch">确认</a>
+                </li>
+            </ul>
+        </div>
+        <ul class="ac-list" id="productList">
+            <li>
+                <a> 
+                    <img src="../img/list_b1.jpg" alt="">
+                    <b>松桂坊湘西特产六件组(湘西外婆菜x2袋 五花腊肉x...</b>
+                    <p><i>￥159</i>￥99</p>
+                    <font><span></span>月销151件</font>
+                </a>
+            </li>
+        
+            <li>
+                <a>
+                    <img src="../img/list_b2.jpg" alt="">
+                    <b>好当家有机即食刺参50头 赠鱿鱼8盒 鲍汁20袋</b>
+                    <p><i>￥1349</i>￥899</p>
+                    <font><span></span>月销136件</font>
+                </a>
+            </li>
+        
+            <li>
+                <a>
+                    <img src="../img/list_b3.jpg" alt="">
+                    <b>品粒品味新疆纯野生黑枸杞40g/罐</b>
+                    <p><i>￥99</i>￥69</p>
+                    <font><span></span>月销114件</font>
+                </a>
+            </li>
+        
+            <li>
+                <a> 
+                    <img src="../img/list_b4.jpg" alt="">
+                    <b >共72罐！德丰红烧牛肉*44罐+香辣牛肉16罐 赠...</b>
+                    <p><i>￥523.5</i>￥369</p>
+                    <font><span></span>月销189件</font>
+                </a>
+            </li>
+        
+            <li>
+                <a>
+                   <img src="../img/list_b5.jpg" alt="">
+                    <b>直降50元！格林鹿肉蘑菇酱20罐</b>
+                    <p><i>￥298</i>￥129</p>
+                    <font><span></span>月销175件</font>
+                </a>
+            </li>
+        
+            <li>
+                <a>
+                    <img src="../img/list_b6.jpg" alt="">
+                    <b>韩国·A&amp;S奥尚蜂蜜柚子茶1kg </b>
+                    <p><i>￥65</i>￥59</p>
+                    <font><span></span>月销123件</font>
+                </a>
+            </li>
+        
+            <li>
+                <a>
+                    <img src="../img/list_b7.jpg" alt="">
+                    <b>五粮液股份万事如意佳品酒500ml*12瓶</b>
+                    <p><i>￥1499</i>￥999</p>
+                    <font><span></span>月销166件</font>
+                </a>
+            </li>
+        
+            <li>
+                <a>
+                    <img src="../img/list_b8.jpg" alt="">
+                    <b>青海野生黑枸杞限量庆生组 黑枸杞20g/瓶*6瓶 赠6瓶</b>
+                    <p><i>￥567</i>￥398</p>
+                    <font><span></span>月销105件</font>
+                </a>
+            </li>
+        
+            <li>
+                <a> 
+                    <img src="../img/list_b9.jpg" alt="">
+                    <b>韩国·A&amp;S奥尚蜂蜜芦荟茶1kg</b>
+                    <p><i>￥77</i>￥59</p>
+                    <font><span></span>月销113件</font>
+                </a>
+            </li>
+        
+            <li>
+                <a>
+                    <img src="../img/list_b10.jpg" alt="">
+                    <b>马来西亚·正典即食燕窝（80g/瓶）*30</b>
+                    <p><i>￥1497</i>￥998</p>
+                    <font><span></span>月销118件</font>
+                </a>
+            </li>
+        
+            <li>
+                <a>
+                    <img src="../img/list_b11.jpg" alt="">
+                    <b>韩国·A&amp;S奥尚蜂蜜生姜茶1kg </b>
+                    <p><i>￥65</i>￥59</p>
+                    <font><span></span>月销115件</font>
+                </a>
+            </li>
+        
+            <li>
+                <a>
+                    <img src="../img/list_b12.jpg" alt="">
+                    <b title="韩国·A&amp;S奥尚蜂蜜柠檬茶1Kg ">韩国·A&amp;S奥尚蜂蜜柠檬茶1Kg </b>
+                    <p><i>￥77</i>￥59</p>
+                    <font><span></span>月销113件</font>
+                </a>
+            </li>
+        
+            <li>
+                <a>
+                    <img src="../img/list_b13.jpg" alt="">
+                    <b title="韩国·A&amp;S奥尚蜂蜜柚子茶580g*2">韩国·A&amp;S奥尚蜂蜜柚子茶580g*2</b>
+                    <p><i>￥84</i>￥74</p>
+                    <font><span></span>月销115件</font>
+                </a>
+            </li>
+        
+            <li>
+                <a>
+                    <img src="../img/list_b14.jpg" alt="">
+                    <b>十月初五 鲍鱼酥（盒装）240g*2</b>
+                    <p><i>￥65</i>￥36</p>
+                    <font><span></span>月销115件</font>
+                </a>
+            </li>
+        
+            <li>
+                <a>
+                    <img src="../img/list_b15.jpg" alt="">
+                    <b>十月初五 芝麻饼（便利装）62g*2</b>
+                    <p><i>￥36</i>￥26</p>
+                    <font><span></span>月销114件</font>
+                </a>
+            </li>
+        
+            <li>
+                <a>
+                    <img src="../img/list_b16.jpg" alt="">
+                    <b>十月初五 迷你合桃酥(便利装）108g*2</b>
+                    <p><i>￥36</i>￥19</p>
+                    <font><span></span>月销124件</font>
+                </a>
+            </li>
+        
+            <li>
+                <a>
+                    <img src="../img/list_b17.jpg" alt="">
+                    <b>十月初五 红糖鸡蛋卷（盒装）150g</b>
+                    <p><i>￥28</i>￥19</p>
+                    <font><span></span>月销111件</font>
+                </a>
+            </li>
+        
+            <li>
+                <a>
+                    <img src="../img/list_b18.jpg" alt="">
+                    <b>十月初五 奶油麦酥条（盒装）160g*2</b>
+                    <p><i>￥64</i>￥29</p>
+                    <font><span></span>月销113件</font>
+                </a>
+            </li>
+        
+            <li>
+                <a>
+                    <img src="../img/list_b19.jpg" alt="">
+                    <b title="十月初五 奶油曲奇饼（盒装）190g ">十月初五 奶油曲奇饼（盒装）190g </b>
+                    <p><i>￥39</i>￥23</p>
+                    <font><span></span>月销116件</font>
+                </a>
+            </li>
+        
+            <li>
+                <a>
+                    <img src="../img/list_b20.jpg" alt="">
+                    <b>十月初五凤梨酥（盒装）180g*2</b>
+                    <p><i>￥98</i>￥39</p>
+                    <font><span></span>月销119件</font>
+                </a>
+            </li>
+        </ul>
+        <div class="pag">
+            <span id="PaginationTB">
+                <aclass="curr" style="cursor:pointer">
+                <a><span id="spprev">上一页</span></a>
+                </a>
+                <a class="curr" style="cursor:pointer">1</a>
+                <a href="#" style="cursor:pointer">2</a>
+                <a href="#" style="cursor:pointer">3</a>
+                <a href="#" style="cursor:pointer">4</a>
+                <span>...</span>
+                <a href="#" style="cursor:pointer">84</a>
+                <a href="#" style="cursor:pointer">85</a>
+                <a href="#" style="cursor:pointer">
+                <span id="spnext">下一页</span>
+                </a>
+                </span>
+                <span id="PageSet">
+                <em>共85页 到第<input id="txtPageCount" value="1" type="text">页</em>
+                <a style="cursor:pointer">确定</a>
+            </span>
+        </div>
+    </div>
+    <div class="fr">
+        <div class="selling">
+            <div class="hd">
+            	<h2>热销推荐</h2>
+            </div>
+            <ul class="bd" id="hotProductsList">
+                <li>
+                    <a>
+                        <i class="i1">1</i>
+                        <img src="../img/list_c1.jpg" alt="">
+                        <b>晟麦冷榨亚麻籽油750ml*10瓶</b>
+                        <em>￥399</em>
+                    </a>
+                </li>
+            
+                <li>
+                    <a>
+                        <i class="i2">2</i>
+                        <img src="../img/list_c2.jpg" alt="">
+                        <b>思家旺电动扫拖一体机*2台</b>
+                        <em>￥269</em>
+                    </a>
+                </li>
+            
+                <li>
+                    <a>
+                        <i class="i3">3</i>
+                        <img src="../img/list_c3.jpg" alt="">
+                        <b>8周年商品特辑-韩束魔力水珠BB霜12支 赠玫瑰面...</b>
+                        <em>￥269</em>
+                    </a>
+                </li>
+            
+                <li>
+                    <a>
+                        <img src="../img/list_c4.jpg" alt="">
+                        <b>德国·宝特佳.莱姆斯百香果味利口酒500ml</b>
+                        <em>￥88</em>
+                    </a>
+                </li>
+            
+                <li>
+                    <a>
+                        <img src="../img/list_c5.jpg" alt="">
+                        <b>台湾·一本冰糖杏仁糊150g</b>
+                        <em>￥25</em>
+                    </a>
+                </li>
+            
+                <li>
+                    <a>
+                        <img src="../img/list_c6.jpg" alt="">
+                        <b>韩国·含百馨自然主义敏感皮肤湿巾（60抽）</b>
+                        <em>￥45</em>
+                    </a>
+                </li>
+            
+                <li>
+                    <a>
+                        <img src="../img/list_c7.jpg" alt="">
+                        <b>韩国·含百馨橄榄油葡萄沐浴露500g</b>
+                        <em>￥79</em>
+                    </a>
+                </li>
+            
+                <li>
+                    <a>
+                        <img src="../img/list_c4.jpg" alt="">
+                        <b>德国·宝特佳.莱姆斯百香果味利口酒500ml</b>
+                        <em>￥88</em>
+                    </a>
+                </li>
+            
+                <li>
+                    <a>
+                        <img src="../img/list_c5.jpg" alt="">
+                        <b>台湾·一本冰糖杏仁糊150g</b>
+                        <em>￥25</em>
+                    </a>
+                </li>
+            
+                <li>
+                    <a>
+                        <img src="../img/list_c6.jpg" alt="">
+                        <b>韩国·含百馨自然主义敏感皮肤湿巾（60抽）</b>
+                        <em>￥45</em>
+                    </a>
+                </li>
+            
+                <li>
+                    <a>
+                        <img src="../img/list_c7.jpg" alt="">
+                        <b>韩国·含百馨橄榄油葡萄沐浴露500g</b>
+                        <em>￥79</em>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="clear"></div>
+    <div class="live-list">
+        <div class="hd">
+            <h2>猜你喜欢</h2>
+        </div> 
+            <div class="bd">
+                <ul id="list1">
+                    <li>
+                        <a>
+                            <img src="../img/list_a1.jpg">
+                            <span class="s1">正在直播...</span>
+                            <b>艾兰得氨糖软骨素维生素D钙片30片/瓶*10瓶 赠...</b>
+                            <font>￥268<i>￥447</i></font>
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a>
+                            <img src="../img/list_a2.jpg">
+                            <span>15:35 - 16:15</span>
+                            <b>新西兰·纽仕兰牧场麦卢卡蜂蜜配方奶粉800克*2罐...</b>
+                            <font>￥468<i>￥747</i></font>
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a>
+                            <img src="../img/list_a3.jpg">
+                            <span>16:15 - 16:55</span>
+                            <b>花花公子 经典条纹男士POLO衫2件 赠T恤2件</b>
+                            <font>￥228<i>￥597</i></font>
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a>
+                            <img src="../img/list_a4.jpg">
+                            <span>16:55 - 17:35</span>
+                            <b>恒源祥男士内裤10条  赠T恤*2</b>
+                            <font>￥268<i>￥447</i></font>
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a>
+                            <img src="../img/list_a5.jpg">
+                            <span>17:35 - 18:15</span>
+                            <b>捷赛智能厨师锅 自动烹饪锅JSC-D122</b>
+                            <font>￥368<i>￥596</i></font>
+                        </a>
+                    </li>
+                </ul>
+                <a class="prev"></a>
+                <a class="next"></a>
+            </div>
+        </div>
+    </div>
+    <div class="again">
+        <b>重新搜索</b><input value="" id="txtAgainSearch" type="text"><a id="btnRepeatSearch">搜索</a>
+    </div>
+</div>
+<!--====================内容 end===================-->     
+<!--====================返回顶部====================-->
+<ul class="drift">
+    <li class="l1">
+        <a href="#">
+            <strong class="tan2">
+                <i></i>
+                <span></span>
+                <img src="../img/ewm02.jpg">
+                <em>惠家有APP</em>
+            </strong>
+        </a>
+    </li>
+    <li class="l2">
+        <a href="#">
+            <strong class="tan2">
+                <i></i>
+                <span></span>
+                <img src="../img/ewm01.jpg">
+                <em>惠家有微信</em>
+            </strong>
+        </a>
+    </li>
+    <li style="display: list-item;" class="l3" id="back-to-top">
+        <a href="#">返回顶部</a>
+    </li>
+</ul>
+
+<!--=============底部============== -->
+<ul class="warrant" id="ul_warrant">
+	<li class="l1">
+		<b>100%正品保证</b>
+		<i>质量有保障</i>
+	</li>
+	<li class="l2">
+		<b>在线支付 全场包邮</b>
+		<i>送货上门</i>
+	</li>
+		<li class="l3">
+		<b>支持银联刷卡付款</b>
+	<i>付款更安全</i>
+	</li>
+    <li class="l4">
+		<b>货到付款 开箱验货</b>
+		<i>满意才收货</i>
+	</li>
+	<li class="l5">
+		<b>7x24小时人工服务</b>
+		<i>微笑无时无刻 4008-678-210</i>
+	</li>
+</ul>
+
+
+<div class="foot" style="display:">
+	<div class="cont">
+		<div class="fl" id="div_title_index">
+			<dl>
+				<dt>
+				<a>关于我们</a>
+				</dt>
+				<dd>
+					<a>公司介绍</a>
+				</dd>
+				<dd>
+					<a>招聘信息</a>
+				</dd>
+				<dd>
+					<a>联系我们</a>
+				</dd>
+				<dd>
+					<a>用户隐私条款</a>
+				</dd>
+			</dl>
+
+			<dl>
+				<dt>
+					<a>订购指南</a>
+				</dt>
+				<dd>
+					<a>交易条款</a>
+				</dd>
+				<dd>
+					<a>注册/购物流程</a>
+				</dd>
+				<dd>
+					<a>退/换货</a>
+				</dd>
+				<dd>
+					<a>积分说明</a>
+				</dd>
+				<dd>
+					<a>发票指南</a>
+				</dd>
+				<dd>
+					<a>会员制度说明</a>
+				</dd>
+			</dl>
+            
+			<dl>
+				<dt>
+					<a>配送服务</a>
+				</dt>
+				<dd>
+					<a>配送时间</a>
+				</dd>
+				<dd>
+					<a>配送时间</a>
+				</dd>
+				<dd>
+					<a>验货与签收</a>
+				</dd>
+			</dl>
+            
+			<dl>
+				<dt>
+					<a>支付方式</a>
+				</dt>
+				<dd>
+					<a>网上支付</a>
+				</dd>
+				<dd>
+					<a>货到付款</a>
+				</dd>
+			</dl>
+
+			<dl>
+				<dt>
+					<a>合作专区</a>
+				</dt>
+				<dd>
+					<a>成为供应商</a>
+				</dd>
+				<dd>
+					<a>供应商系统</a>
+				</dd>
+				<dd>
+					<a>合作伙伴</a>
+				</dd>
+			</dl>
+            
+		</div>
+	<div class="fr">
+<ul class="hd">
+<li><img src="../img/ewm01.jpg">惠家有微信</li>
+<li><img src="../img/ewm02.jpg">惠家有APP</li>
+</ul>
+                <p>
+                    <b>4008-678-210</b>
+                    <i>客服 7x24小时 (全年无休)</i>
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="cont">
+            <p style="display:none">
+                <a>关于我们</a>
+                <span>|</span>
+                <a>媒体关注</a>
+                <span>|</span>
+                <a>联系我们</a>
+                <span>|</span>
+                <a>诚聘英才</a>
+                <span>|</span>
+                <a>校园招聘</a>
+                <span>|</span>
+                <a>全部品牌</a>
+                <span>|</span>
+                <a>投诉建议</a>
+            </p>
+            <p id="friendLinkList">友情链接： 
+                <a>南京手机报价</a> <a>竞拍</a> 
+                <a>奥莱购</a> 
+                <a>商品百科</a>
+            </p>
+            <p>Copyright © 2008-2013 huijiayou.cn <a>家有购物集团有限公司北京分公司</a> 版权所有 黔ICP备13002365号  增值电信业务经营许可证：黔B2-20120036</p>
+        </div>
+    </div>
+<script src="../js/mod.js/list.js"></script>
+<script src="../js/common.js/common.js"></script>
+</body>
+</html>
